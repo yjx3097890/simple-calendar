@@ -40,3 +40,6 @@
 .calendar .onedate.selected, .calendar .onedate:hover {
   box-shadow: inset 1px 1px 4px 0px #000000;   //内嵌效果
 }
+.calendar .premonth, .calendar .nextmonth {
+    opacity: 0.3;
+}
