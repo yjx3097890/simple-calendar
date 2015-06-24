@@ -1,0 +1,42 @@
+.calendar {
+  background-color:#9F9F9F;
+  border-radius: 2px;
+  box-shadow: 0 0 1px;
+  border-collapse:collapse;
+  border-spacing: 0px;
+  font-family: Arial;
+  }
+.calendar td{
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bolder;
+  color: #333;
+  padding: 4px 6px;
+  text-align: center;
+  width: 15px;
+  height: 19px;
+  line-height: 19px;
+  cursor: pointer;
+}
+.calendar .weekdays td {
+  width: 16px;
+}
+.calendar td.onedate {
+    border-left: solid 1px #FFF;
+    border-top: solid 1px #FFF;
+    box-shadow:0 0 2px 0px #000000;
+}
+.calendar .onedate:last-child {
+  border-right: solid 1px #FFF;
+}
+.calendar tr:last-child .onedate {
+  border-bottom: solid 1px #FFF;
+}
+.calendar .onedate.currentday {
+    color: steelBlue;
+    box-shadow:0 0 2px 0px steelBlue;
+}
+
+.calendar .onedate.selected, .calendar .onedate:hover {
+  box-shadow: inset 1px 1px 4px 0px #000000;   //内嵌效果
+}
